@@ -1,0 +1,102 @@
+:root {
+  --purple: #7F00FF;
+  --light-orange: #d6a70e;
+  --light-red: #fa7474;
+  --yellow: #F6BE00;
+  --light-green: #5CEDAA;
+  --green: #00873E;
+  --shadow: #191919;
+}
+
+header{ 
+  text-shadow: 1px 1px 2px var(--shadow);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  padding: 10px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-radius: 15px;
+}
+
+/*Removed dashed border */
+.hour {
+  background-color: transparent;
+  color: #000000;
+}
+
+/*Styling added to past, present and future*/
+.past {
+  background-color: var(--light-purple);
+  color: white;
+}
+
+.past textarea {
+  border-left: 5px solid;
+  border-color: var(--purple);
+  border-radius: 1px;
+}
+
+.present {
+  background-color: var(--light-yellow);
+  color: white;
+}
+
+.present textarea {
+  border-left: 5px solid;
+  border-color: var(--yellow);
+  border-radius: 1px;
+}
+
+.future {
+  background-color: var(--light-green);
+  color: white;
+}
+
+.future textarea {
+  border-left: 5px solid;
+  border-color: var(--green);
+  border-radius: 1px;
+}
+
+.saveBtn {
+  border-left: 1px solid black; 
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Added a container class to shape the text area*/
+.container-border {
+  margin-top: 2px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
